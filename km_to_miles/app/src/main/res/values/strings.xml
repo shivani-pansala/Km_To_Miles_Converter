@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">km_to_miles</string>
+    <string name="miles_to_km">Miles to KM</string>
+    <string name="miles">Miles</string>
+    <string name="km">KM</string>
+    <string name="km_to_miles">KM to Miles</string>
+</resources>

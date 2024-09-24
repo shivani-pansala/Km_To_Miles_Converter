@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@drawable/img_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#5C3C95"
+            android:textStyle="bold"
+            android:text="@string/miles"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#5C3C95">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/milesInput"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:hint="Enter miles" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/km"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#5C3C95"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#5C3C95">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/kmInput"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#5C3C95"
+                android:layout_marginStart="0dp"
+                android:hint="Enter kilometers" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/convMilesToKm"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="MilesToKM"
+        android:layout_gravity="center"
+        style="@style/Widget.MaterialComponents.Button"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        app:backgroundTint="#5C3C95"
+        android:textStyle="bold"
+    />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/convKmToMiles"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="KMToMiles"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        style="@style/Widget.MaterialComponents.Button"
+        app:backgroundTint="#5C3C95"
+        android:textStyle="bold"/>
+
+</LinearLayout>
